@@ -2,9 +2,15 @@
     <string name="app_name">Library</string>
     <string name="title">借书</string>
     <string name="reader">读者：</string>
-    <string name="sex">性别</string>
+    <string name="sex">性别：</string>
     <string name="input_name">请输入名字</string>
     <string name="male">男</string>
     <string name="female">女</string>
-    <string name="borrow_time">借出时间</string>
+    <string name="borrow_time">借出时间：</string>
+    <string name="return_time">归还时间：</string>
+    <string name="_2016_06_30">2016.06.30</string>
+    <string name="hobby">兴趣爱好：</string>
+    <string name="history">历史</string>
+    <string name="suspense">悬疑</string>
+    <string name="literary">文艺</string>
 </resources>

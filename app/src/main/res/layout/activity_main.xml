@@ -21,45 +21,49 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="45dp"
         android:orientation="horizontal"
-        android:layout_weight="1">
+      >
 
 
         <TextView
             android:id="@+id/reader"
-            android:layout_width="match_parent"
+            android:layout_width="55dp"
             android:layout_height="wrap_content"
             android:text="@string/reader"
-            android:layout_weight="1"/>
+            android:textSize="15sp"
+            android:paddingLeft="8dp"/>
+
         <EditText
-            android:layout_width="match_parent"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:hint="@string/input_name"
+
             android:textSize="15sp"
-            android:layout_weight="1"/>
+            android:paddingLeft="40dp"/>
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="55dp"
             android:layout_height="wrap_content"
             android:text="@string/sex"
-            android:layout_weight="1"/>
+            android:textSize="15sp"
+            android:paddingLeft="8dp"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:textSize="15sp"
             android:orientation="horizontal">
 
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="3"
+                android:textSize="15sp"
                 android:orientation="horizontal">
 
                 <RadioButton
                     android:id="@+id/male"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
 
                     android:text="@string/male" />
 
@@ -79,14 +83,60 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="45dp"
         android:orientation="horizontal"
-        android:layout_weight="1">
+        >
         <TextView
             android:id="@+id/borrow_time"
-            android:layout_width="match_parent"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="@string/borrow_time" />
+            android:text="@string/borrow_time"
+            android:paddingLeft="8dp"/>
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_name"
+            android:textSize="15sp"
+            android:paddingLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/return_time"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/return_time"
+            android:paddingLeft="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_2016_06_30"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/hobby"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hobby"
+            android:paddingLeft="8dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/history"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suspense"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/literary"/>
 
     </LinearLayout>
 
