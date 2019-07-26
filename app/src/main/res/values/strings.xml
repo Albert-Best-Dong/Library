@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string name="title">借书</string>
+    <string name="reader">读者：</string>
+    <string name="sex">性别</string>
+    <string name="input_name">请输入名字</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="borrow_time">借出时间</string>
+</resources>
