@@ -3,143 +3,274 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/title"
-            android:textSize="20sp"
             android:paddingLeft="15dp"
-            android:paddingTop="8dp"/>
+            android:paddingTop="8dp"
+            android:text="@string/title"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <!--
+        读者信息
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/reader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="@string/reader"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_name"
+                android:gravity="center"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+           android:layout_weight="1">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/sex"
+               android:textSize="15sp" />
+
+           <RadioGroup
+               android:id="@+id/sex"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:textSize="15sp">
+
+               <RadioButton
+                   android:id="@+id/male"
+                   android:layout_width="60dp"
+                   android:layout_height="wrap_content"
+                   android:textSize="15sp"
+                   android:text="@string/male" />
+
+               <RadioButton
+                   android:id="@+id/female"
+                   android:layout_width="70dp"
+                   android:layout_height="wrap_content"
+                   android:textSize="15sp"
+                   android:text="@string/female" />
+           </RadioGroup>
+       </LinearLayout>
+
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:orientation="horizontal"
-      >
+        android:orientation="horizontal">
 
-
-        <TextView
-            android:id="@+id/reader"
-            android:layout_width="55dp"
-            android:layout_height="wrap_content"
-            android:text="@string/reader"
-            android:textSize="15sp"
-            android:paddingLeft="8dp"/>
-
-        <EditText
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:hint="@string/input_name"
-
-            android:textSize="15sp"
-            android:paddingLeft="40dp"/>
-        <TextView
-            android:layout_width="55dp"
-            android:layout_height="wrap_content"
-            android:text="@string/sex"
-            android:textSize="15sp"
-            android:paddingLeft="8dp"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:orientation="horizontal">
-
-            <RadioGroup
-                android:layout_width="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:textSize="15sp"
-                android:orientation="horizontal">
+                android:paddingLeft="8dp"
+                android:text="@string/borrow_time" />
 
-                <RadioButton
-                    android:id="@+id/male"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+            <EditText
+                android:id="@+id/borrow_time"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_time"
+                android:paddingLeft="8dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="@string/return_time" />
 
-                    android:text="@string/male" />
-
-                <RadioButton
-                    android:id="@+id/female"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/female" />
-            </RadioGroup>
+            <TextView
+                android:id="@+id/return_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2016_06_30" />
         </LinearLayout>
 
 
 
-
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:orientation="horizontal"
-        >
-        <TextView
-            android:id="@+id/borrow_time"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:text="@string/borrow_time"
-            android:paddingLeft="8dp"/>
-        <EditText
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:hint="@string/input_name"
-            android:textSize="15sp"
-            android:paddingLeft="8dp"/>
+        android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/return_time"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:text="@string/return_time"
-            android:paddingLeft="8dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/_2016_06_30"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:orientation="horizontal"
-        >
         <TextView
             android:id="@+id/hobby"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="@string/hobby"
-            android:paddingLeft="8dp"/>
+            android:paddingLeft="8dp"
+            android:text="@string/hobby" />
 
         <CheckBox
+            android:id="@+id/historyCheckBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/history"/>
+            android:text="@string/history" />
 
         <CheckBox
+            android:id="@+id/suspenseCheckBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/suspense"/>
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/literary"/>
+            android:text="@string/suspense" />
 
+        <CheckBox
+            android:id="@+id/literacyCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/literary" />
+    </LinearLayout>
+    <!--年龄信息 SeekBar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="@string/age" />
+
+        <TextView
+            android:id="@+id/showAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="0"
+            android:textSize="15sp"/>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:max="100"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="15sp"/>
     </LinearLayout>
 
+    <!--
+        图书信息
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/bookImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/aa"
+            android:layout_weight="1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/bookName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/bookname"
+                />
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/category"
+                />
+            <TextView
+                android:id="@+id/suitableAge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/suitable_age"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--
+        查找按钮和下一个按钮
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/find"
+            android:layout_marginLeft="8dp"/>
+        <TextView
+            android:id="@+id/show"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
 
 
 </LinearLayout>
